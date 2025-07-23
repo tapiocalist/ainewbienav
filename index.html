@@ -9,237 +9,547 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <h1 class="logo">💻 AI Web Builder Guide</h1>
-            <p class="subtitle">Build Professional Websites with AI - No Coding Experience Required</p>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button id="en-btn" class="lang-btn" data-lang="en">
+            <span>🇺🇸 English</span>
+        </button>
+        <button id="zh-btn" class="lang-btn" data-lang="zh">
+            <span>🇨🇳 中文</span>
+        </button>
+    </div>
+    
+    <!-- Language Switch Hint -->
+    <div class="language-hint" id="language-hint">
+        <div class="hint-content">
+            <span data-lang="en">点击右上角的 🇨🇳 中文 按钮切换到中文</span>
+            <span data-lang="zh" style="display: none;">Click the 🇺🇸 English button in the top right to switch to English</span>
+            <button class="hint-close" id="hint-close">×</button>
         </div>
-    </header>
+    </div>
+    <!-- Hero Banner Section -->
+    <section class="hero-banner">
+        <div class="container">
+            <div class="banner-content">
+                <h2 class="banner-title">
+                    <span data-lang="en">🚀 From Zero to Website in 5 Simple Steps</span>
+                    <span data-lang="zh" style="display: none;">🚀 从零开始，5步轻松建站</span>
+                </h2>
+                <p class="banner-subtitle">
+                    <span data-lang="en">Follow our proven roadmap to build professional websites using AI tools</span>
+                    <span data-lang="zh" style="display: none;">跟随我们经过验证的路线图，使用AI工具构建专业网站</span>
+                </p>
+
+                <div class="process-flow">
+                    <div class="flow-step">
+                        <div class="flow-icon">📚</div>
+                        <span class="flow-text">
+                            <span data-lang="en">Learn Basics</span>
+                            <span data-lang="zh" style="display: none;">学习基础</span>
+                        </span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-icon">🤖</div>
+                        <span class="flow-text">
+                            <span data-lang="en">Setup AI Tools</span>
+                            <span data-lang="zh" style="display: none;">配置AI工具</span>
+                        </span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-icon">💻</div>
+                        <span class="flow-text">
+                            <span data-lang="en">Build Website</span>
+                            <span data-lang="zh" style="display: none;">构建网站</span>
+                        </span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-icon">🌐</div>
+                        <span class="flow-text">
+                            <span data-lang="en">Deploy Online</span>
+                            <span data-lang="zh" style="display: none;">在线部署</span>
+                        </span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-icon">📈</div>
+                        <span class="flow-text">
+                            <span data-lang="en">Grow & SEO</span>
+                            <span data-lang="zh" style="display: none;">增长与SEO</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="banner-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">
+                            <span data-lang="en">Simple Steps</span>
+                            <span data-lang="zh" style="display: none;">简单步骤</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">
+                            <span data-lang="en">Coding Required</span>
+                            <span data-lang="zh" style="display: none;">编程要求</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">
+                            <span data-lang="en">Possibilities</span>
+                            <span data-lang="zh" style="display: none;">无限可能</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner-cta">
+                    <a href="#step-01" class="cta-button">
+                        <span data-lang="en">Start Building Now</span>
+                        <span data-lang="zh" style="display: none;">立即开始建站</span>
+                    </a>
+                    <span class="cta-note">
+                        <span data-lang="en">✨ Powered by AI</span>
+                        <span data-lang="zh" style="display: none;">✨ AI驱动</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <main class="main">
         <div class="container">
             <!-- Step 1: Learn Web Basics -->
-            <section class="step-section">
+            <section class="step-section" id="step-01">
                 <div class="step-header">
                     <span class="step-number">01</span>
-                    <h2>Learn Web Development Basics</h2>
+                    <h2>
+                        <span data-lang="en">Learn Web Development Basics</span>
+                        <span data-lang="zh" style="display: none;">学习网站开发基础</span>
+                    </h2>
                 </div>
                 <div class="knowledge-grid">
                     <div class="knowledge-card">
-                        <h3>🌐 Domain Names</h3>
-                        <p>A domain name is your website's address on the internet, like google.com. It helps users find
-                            your website easily.</p>
+                        <h3>
+                            <span data-lang="en">🌐 Domain Names</span>
+                            <span data-lang="zh" style="display: none;">🌐 域名</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">A domain name is your website's address on the internet, like
+                                google.com. It helps users find your website easily.</span>
+                            <span data-lang="zh" style="display: none;">域名就是网站的地址，比如
+                                google.com。它让用户能够通过简单的名字找到你的网站。</span>
+                        </p>
                         <div class="learn-links">
                             <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_domain_name"
-                                class="learn-link" target="_blank">Learn More →</a>
-                            <a href="https://www.youtube.com/watch?v=Y4cRx19nhJk" class="learn-link"
-                                target="_blank">Watch Video →</a>
+                                class="learn-link" target="_blank">
+                                <span data-lang="en">Learn More →</span>
+                                <span data-lang="zh" style="display: none;">深入学习 →</span>
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=Y4cRx19nhJk" class="learn-link" target="_blank">
+                                <span data-lang="en">Watch Video →</span>
+                                <span data-lang="zh" style="display: none;">观看视频 →</span>
+                            </a>
                         </div>
                     </div>
                     <div class="knowledge-card">
-                        <h3>🖥️ Web Servers</h3>
-                        <p>A web server stores your website files and delivers them to visitors. Think of it as your
-                            website's home on the internet.</p>
+                        <h3>
+                            <span data-lang="en">🖥️ Web Servers</span>
+                            <span data-lang="zh" style="display: none;">🖥️ 服务器</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">A web server stores your website files and delivers them to visitors.
+                                Think of it as your website's home on the internet.</span>
+                            <span data-lang="zh"
+                                style="display: none;">服务器是存放网站文件的地方，就像网站的家。用户访问域名时，服务器会把网站内容发送给他们。</span>
+                        </p>
                         <div class="learn-links">
                             <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server"
-                                class="learn-link" target="_blank">Learn More →</a>
-                            <a href="https://www.youtube.com/watch?v=9J1nJOivdyw" class="learn-link"
-                                target="_blank">Watch Video →</a>
+                                class="learn-link" target="_blank">
+                                <span data-lang="en">Learn More →</span>
+                                <span data-lang="zh" style="display: none;">深入学习 →</span>
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=9J1nJOivdyw" class="learn-link" target="_blank">
+                                <span data-lang="en">Watch Video →</span>
+                                <span data-lang="zh" style="display: none;">观看视频 →</span>
+                            </a>
                         </div>
                     </div>
                     <div class="knowledge-card">
-                        <h3>💻 Frontend Languages</h3>
-                        <p>Frontend uses HTML, CSS, and JavaScript to build user interfaces. With AI, you only need
-                            basic understanding.</p>
+                        <h3>
+                            <span data-lang="en">💻 Frontend Languages</span>
+                            <span data-lang="zh" style="display: none;">💻 前端编程语言</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">Frontend uses HTML, CSS, and JavaScript to build user interfaces. With
+                                AI, you only need basic understanding.</span>
+                            <span data-lang="zh"
+                                style="display: none;">前端主要用HTML、CSS、JavaScript构建用户界面。现在有AI了，只需要大概了解即可。</span>
+                        </p>
                         <div class="learn-links">
-                            <a href="https://developer.mozilla.org/en-US/" class="learn-link" target="_blank">MDN Docs
-                                →</a>
-                            <a href="https://www.w3schools.com/" class="learn-link" target="_blank">W3Schools →</a>
+                            <a href="https://developer.mozilla.org/en-US/" class="learn-link" target="_blank">
+                                <span data-lang="en">MDN Docs →</span>
+                                <span data-lang="zh" style="display: none;">MDN文档 →</span>
+                            </a>
+                            <a href="https://www.w3schools.com/" class="learn-link" target="_blank">
+                                <span data-lang="en">W3Schools →</span>
+                                <span data-lang="zh" style="display: none;">W3Schools →</span>
+                            </a>
                         </div>
                     </div>
                     <div class="knowledge-card">
-                        <h3>🔧 Backend Languages</h3>
-                        <p>Backend handles data and business logic. Modern frameworks like Next.js make it easier,
-                            especially with AI assistance.</p>
+                        <h3>
+                            <span data-lang="en">🔧 Backend Languages</span>
+                            <span data-lang="zh" style="display: none;">🔧 后端编程语言</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">Backend handles data and business logic. Modern frameworks like Next.js
+                                make it easier, especially with AI assistance.</span>
+                            <span data-lang="zh" style="display: none;">后端处理数据和业务逻辑，推荐使用Next.js等现代框架。有AI帮助，学习更轻松。</span>
+                        </p>
                         <div class="learn-links">
-                            <a href="https://nextjs.org/docs" class="learn-link" target="_blank">Next.js Docs →</a>
+                            <a href="https://nextjs.org/docs" class="learn-link" target="_blank">
+                                <span data-lang="en">Next.js Docs →</span>
+                                <span data-lang="zh" style="display: none;">Next.js文档 →</span>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="ai-intro">
-                    <p>💡 <strong>Important:</strong> You only need basic understanding of the above concepts because AI
-                        tools can help you write most of the code! Let's explore the best AI tools for web development.
+                    <p>
+                        <span data-lang="en">💡 <strong>Important:</strong> You only need basic understanding of the
+                            above concepts because AI tools can help you write most of the code! Let's explore the best
+                            AI tools for web development.</span>
+                        <span data-lang="zh" style="display: none;">💡
+                            <strong>重要提示：</strong>以上知识只需要大概了解即可，因为现在有AI工具可以帮你写代码！下面我们来看看有哪些好用的AI工具。</span>
                     </p>
                 </div>
             </section>
 
             <!-- Step 2: AI Tools Setup -->
-            <section class="step-section">
+            <section class="step-section" id="step-02">
                 <div class="step-header">
                     <span class="step-number">02</span>
-                    <h2>Essential AI Tools</h2>
+                    <h2>
+                        <span data-lang="en">Essential AI Tools</span>
+                        <span data-lang="zh" style="display: none;">必备AI工具</span>
+                    </h2>
                 </div>
                 <div class="tools-grid">
                     <div class="tool-card">
                         <div class="tool-icon">🤖</div>
                         <h3>ChatGPT</h3>
-                        <p>The most powerful AI assistant for coding, problem-solving, and guidance. Essential for web
-                            development.</p>
-                        <a href="https://chat.openai.com" class="tool-link" target="_blank">Get Started</a>
+                        <p>
+                            <span data-lang="en">The most powerful AI assistant for coding, problem-solving, and
+                                guidance. Essential for web development.</span>
+                            <span data-lang="zh" style="display: none;">最强大的AI助手，可以帮你写代码、解决问题、提供建议。建站必备工具。</span>
+                        </p>
+                        <a href="https://chat.openai.com" class="tool-link" target="_blank">
+                            <span data-lang="en">Get Started</span>
+                            <span data-lang="zh" style="display: none;">立即使用</span>
+                        </a>
                     </div>
                     <div class="tool-card">
                         <div class="tool-icon">🧠</div>
                         <h3>Claude</h3>
-                        <p>Anthropic's AI assistant, excellent for code analysis and long-form content. Great
-                            programming capabilities.</p>
-                        <a href="https://claude.ai" class="tool-link" target="_blank">Get Started</a>
+                        <p>
+                            <span data-lang="en">Anthropic's AI assistant, excellent for code analysis and long-form
+                                content. Great programming capabilities.</span>
+                            <span data-lang="zh" style="display: none;">Anthropic开发的AI助手，擅长代码分析和长文本处理，编程能力出色。</span>
+                        </p>
+                        <a href="https://claude.ai" class="tool-link" target="_blank">
+                            <span data-lang="en">Get Started</span>
+                            <span data-lang="zh" style="display: none;">立即使用</span>
+                        </a>
                     </div>
                     <div class="tool-card">
                         <div class="tool-icon">💎</div>
                         <h3>Gemini</h3>
-                        <p>Google's free AI assistant with multimodal input support. Perfect for beginners to get
-                            started.</p>
-                        <a href="https://gemini.google.com" class="tool-link" target="_blank">Get Started</a>
+                        <p>
+                            <span data-lang="en">Google's free AI assistant with multimodal input support. Perfect for
+                                beginners to get started.</span>
+                            <span data-lang="zh" style="display: none;">Google的AI助手，免费使用，支持多模态输入，适合初学者入门。</span>
+                        </p>
+                        <a href="https://gemini.google.com" class="tool-link" target="_blank">
+                            <span data-lang="en">Get Started</span>
+                            <span data-lang="zh" style="display: none;">立即使用</span>
+                        </a>
                     </div>
                     <div class="tool-card">
                         <div class="tool-icon">⚡</div>
                         <h3>Cursor</h3>
-                        <p>AI-powered code editor that integrates AI directly into your development workflow for maximum
-                            efficiency.</p>
-                        <a href="https://cursor.sh" class="tool-link" target="_blank">Get Started</a>
+                        <p>
+                            <span data-lang="en">AI-powered code editor that integrates AI directly into your
+                                development workflow for maximum efficiency.</span>
+                            <span data-lang="zh" style="display: none;">AI代码编辑器，直接在编辑器中使用AI写代码，提高开发效率。</span>
+                        </p>
+                        <a href="https://cursor.sh" class="tool-link" target="_blank">
+                            <span data-lang="en">Get Started</span>
+                            <span data-lang="zh" style="display: none;">立即使用</span>
+                        </a>
                     </div>
                     <div class="tool-card">
                         <div class="tool-icon">🚀</div>
                         <h3>Kiro</h3>
-                        <p>Advanced AI development assistant that helps you build, debug, and optimize your web projects
-                            seamlessly.</p>
-                        <a href="https://kiro.ai" class="tool-link" target="_blank">Get Started</a>
+                        <p>
+                            <span data-lang="en">Advanced AI development assistant that helps you build, debug, and
+                                optimize your web projects seamlessly.</span>
+                            <span data-lang="zh" style="display: none;">高级AI开发助手，帮助你无缝构建、调试和优化网站项目。</span>
+                        </p>
+                        <a href="https://kiro.ai" class="tool-link" target="_blank">
+                            <span data-lang="en">Get Started</span>
+                            <span data-lang="zh" style="display: none;">立即使用</span>
+                        </a>
                     </div>
                 </div>
             </section>
 
             <!-- Step 3: Start Building Websites -->
-            <section class="step-section">
+            <section class="step-section" id="step-03">
                 <div class="step-header">
                     <span class="step-number">03</span>
-                    <h2>How to Start Building Websites?</h2>
+                    <h2>
+                        <span data-lang="en">How to Start Building Websites?</span>
+                        <span data-lang="zh" style="display: none;">如何开始建站？</span>
+                    </h2>
                 </div>
 
                 <div class="code-section">
-                    <h3>🎯 Simple Website Prompts</h3>
+                    <h3>
+                        <span data-lang="en">🎯 Simple Website Prompts</span>
+                        <span data-lang="zh" style="display: none;">🎯 简单的网站提示词</span>
+                    </h3>
                     <div class="prompt-cards">
                         <div class="prompt-card">
-                            <h4>Personal Blog</h4>
-                            <p>"Create a clean personal blog website with homepage, about page, and article list. Use
-                                modern design principles."</p>
+                            <h4>
+                                <span data-lang="en">Personal Blog</span>
+                                <span data-lang="zh" style="display: none;">个人博客</span>
+                            </h4>
+                            <p>
+                                <span data-lang="en">"Create a clean personal blog website with homepage, about page,
+                                    and article list. Use modern design principles."</span>
+                                <span data-lang="zh"
+                                    style="display: none;">"创建一个简洁的个人博客网站，包含首页、关于我、文章列表页面，使用现代化的设计风格"</span>
+                            </p>
                         </div>
                         <div class="prompt-card">
-                            <h4>Product Showcase</h4>
-                            <p>"Build a product showcase website with product intro, features, pricing table, and
-                                contact form. Make it responsive."</p>
+                            <h4>
+                                <span data-lang="en">Product Showcase</span>
+                                <span data-lang="zh" style="display: none;">产品展示</span>
+                            </h4>
+                            <p>
+                                <span data-lang="en">"Build a product showcase website with product intro, features,
+                                    pricing table, and contact form. Make it responsive."</span>
+                                <span data-lang="zh"
+                                    style="display: none;">"创建一个产品展示网站，包含产品介绍、特性展示、价格表格和联系方式，响应式设计"</span>
+                            </p>
                         </div>
                         <div class="prompt-card">
-                            <h4>Business Website</h4>
-                            <p>"Design a business website with hero slider, services section, team showcase, news
-                                updates, and contact page."</p>
+                            <h4>
+                                <span data-lang="en">Business Website</span>
+                                <span data-lang="zh" style="display: none;">公司官网</span>
+                            </h4>
+                            <p>
+                                <span data-lang="en">"Design a business website with hero slider, services section, team
+                                    showcase, news updates, and contact page."</span>
+                                <span data-lang="zh"
+                                    style="display: none;">"设计一个公司官网，包含首页轮播图、服务介绍、团队展示、新闻动态和联系我们页面"</span>
+                            </p>
                         </div>
                     </div>
                 </div>
 
                 <div class="examples-section">
-                    <h3>🌟 Website Examples to Learn From</h3>
+                    <h3>
+                        <span data-lang="en">🌟 Website Examples to Learn From</span>
+                        <span data-lang="zh" style="display: none;">🌟 可模仿的网站例子</span>
+                    </h3>
                     <div class="example-cards">
                         <div class="example-card">
                             <h4>DiskPrices.com</h4>
-                            <p>Simple and practical disk price comparison site. Single-purpose but very useful, perfect
-                                for beginners to replicate.</p>
-                            <a href="https://diskprices.com" target="_blank" class="example-link">View Example</a>
+                            <p>
+                                <span data-lang="en">Simple and practical disk price comparison site. Single-purpose but
+                                    very useful, perfect for beginners to replicate.</span>
+                                <span data-lang="zh" style="display: none;">简单实用的硬盘价格对比网站，功能单一但非常实用，适合新手模仿。</span>
+                            </p>
+                            <a href="https://diskprices.com" target="_blank" class="example-link">
+                                <span data-lang="en">View Example</span>
+                                <span data-lang="zh" style="display: none;">查看示例</span>
+                            </a>
                         </div>
                         <div class="example-card">
                             <h4>Game Embed Site</h4>
-                            <p>Online gaming website using simple HTML iframe embeds. Great for practice projects and
-                                learning basics.</p>
-                            <a href="https://poki.com" target="_blank" class="example-link">View Example</a>
+                            <p>
+                                <span data-lang="en">Online gaming website using simple HTML iframe embeds. Great for
+                                    practice projects and learning basics.</span>
+                                <span data-lang="zh" style="display: none;">在线小游戏网站，简单的HTML嵌入iframe，适合练手项目。</span>
+                            </p>
+                            <a href="https://poki.com" target="_blank" class="example-link">
+                                <span data-lang="en">View Example</span>
+                                <span data-lang="zh" style="display: none;">查看示例</span>
+                            </a>
                         </div>
                         <div class="example-card">
                             <h4>Remove.bg</h4>
-                            <p>AI background removal tool with clean interface and clear functionality. Excellent
-                                single-purpose website example.</p>
-                            <a href="https://www.remove.bg" target="_blank" class="example-link">View Example</a>
+                            <p>
+                                <span data-lang="en">AI background removal tool with clean interface and clear
+                                    functionality. Excellent single-purpose website example.</span>
+                                <span data-lang="zh" style="display: none;">AI图片去背景工具，界面简洁，功能明确，是很好的单功能网站例子。</span>
+                            </p>
+                            <a href="https://www.remove.bg" target="_blank" class="example-link">
+                                <span data-lang="en">View Example</span>
+                                <span data-lang="zh" style="display: none;">查看示例</span>
+                            </a>
                         </div>
                         <div class="example-card">
                             <h4>Personal Portfolio</h4>
-                            <p>Showcase personal projects and skills. Perfect template for developers and designers to
-                                display their work.</p>
-                            <a href="https://brittanychiang.com" target="_blank" class="example-link">View Example</a>
+                            <p>
+                                <span data-lang="en">Showcase personal projects and skills. Perfect template for
+                                    developers and designers to display their work.</span>
+                                <span data-lang="zh" style="display: none;">展示个人项目和技能的网站，适合程序员和设计师。</span>
+                            </p>
+                            <a href="https://brittanychiang.com" target="_blank" class="example-link">
+                                <span data-lang="en">View Example</span>
+                                <span data-lang="zh" style="display: none;">查看示例</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </section>
 
             <!-- Step 4: Deploy Your Complete Website -->
-            <section class="step-section">
+            <section class="step-section" id="step-04">
                 <div class="step-header">
                     <span class="step-number">04</span>
-                    <h2>Deploy Your Complete Website</h2>
+                    <h2>
+                        <span data-lang="en">Deploy Your Complete Website</span>
+                        <span data-lang="zh" style="display: none;">部署您的完整网站</span>
+                    </h2>
                 </div>
 
                 <div class="complete-grid">
                     <div class="complete-card">
-                        <h3>🛒 Buy Domain Names</h3>
-                        <p>Get affordable domain names from Spaceship - currently the cheapest option with excellent
-                            management tools.</p>
-                        <a href="https://www.spaceship.com/" class="complete-link" target="_blank">Spaceship Domains</a>
+                        <h3>
+                            <span data-lang="en">🛒 Buy Domain Names</span>
+                            <span data-lang="zh" style="display: none;">🛒 购买域名</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">Get affordable domain names from Spaceship - currently the cheapest
+                                option with excellent management tools.</span>
+                            <span data-lang="zh" style="display: none;">从Spaceship获取价格实惠的域名 -
+                                目前最便宜的选择，并提供出色的管理工具。</span>
+                        </p>
+                        <a href="https://www.spaceship.com/" class="complete-link" target="_blank">
+                            <span data-lang="en">Spaceship Domains</span>
+                            <span data-lang="zh" style="display: none;">Spaceship域名</span>
+                        </a>
                     </div>
                     <div class="complete-card">
-                        <h3>☁️ Free Hosting Options</h3>
-                        <p>For beginners, start with free platforms like GitHub Pages or Vercel. Easy setup and perfect
-                            for learning.</p>
+                        <h3>
+                            <span data-lang="en">☁️ Free Hosting Options</span>
+                            <span data-lang="zh" style="display: none;">☁️ 免费托管选项</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">For beginners, start with free platforms like GitHub Pages or Vercel.
+                                Easy setup and perfect for learning.</span>
+                            <span data-lang="zh" style="display: none;">对于初学者，从GitHub
+                                Pages或Vercel等免费平台开始。设置简单，非常适合学习。</span>
+                        </p>
                         <div class="hosting-links">
                             <a href="https://pages.github.com/" class="complete-link" target="_blank">GitHub Pages</a>
                             <a href="https://vercel.com/" class="complete-link" target="_blank">Vercel</a>
                         </div>
                     </div>
                     <div class="complete-card">
-                        <h3>🚀 AI Tools Upgrade</h3>
-                        <p>As your projects grow complex, consider upgrading to premium AI tools. Most cost around
-                            $20/month for advanced features.</p>
-                        <a href="https://chat.openai.com" class="complete-link" target="_blank">ChatGPT Plus
-                            ($20/mo)</a>
+                        <h3>
+                            <span data-lang="en">🚀 AI Tools Upgrade</span>
+                            <span data-lang="zh" style="display: none;">🚀 AI工具升级</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">As your projects grow complex, consider upgrading to premium AI tools.
+                                Most cost around $20/month for advanced features.</span>
+                            <span data-lang="zh"
+                                style="display: none;">随着项目复杂度增加，可以考虑升级到高级AI工具。大多数高级功能的价格约为20美元/月。</span>
+                        </p>
+                        <a href="https://chat.openai.com" class="complete-link" target="_blank">
+                            <span data-lang="en">ChatGPT Plus ($20/mo)</span>
+                            <span data-lang="zh" style="display: none;">ChatGPT Plus (20美元/月)</span>
+                        </a>
                     </div>
                     <div class="complete-card coming-soon">
-                        <h3>More Resources</h3>
-                        <p>More web development resources coming soon...</p>
-                        <span class="coming-soon-badge">Coming Soon</span>
+                        <h3>
+                            <span data-lang="en">More Resources</span>
+                            <span data-lang="zh" style="display: none;">更多资源</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">More web development resources coming soon...</span>
+                            <span data-lang="zh" style="display: none;">更多网站开发资源即将推出...</span>
+                        </p>
+                        <span class="coming-soon-badge">
+                            <span data-lang="en">Coming Soon</span>
+                            <span data-lang="zh" style="display: none;">即将推出</span>
+                        </span>
                     </div>
                 </div>
             </section>
 
             <!-- Step 5: SEO and Growth -->
-            <section class="step-section">
+            <section class="step-section" id="step-05">
                 <div class="step-header">
                     <span class="step-number">05</span>
-                    <h2>SEO and Website Growth</h2>
+                    <h2>
+                        <span data-lang="en">SEO and Website Growth</span>
+                        <span data-lang="zh" style="display: none;">SEO和网站增长</span>
+                    </h2>
                 </div>
                 <div class="seo-content">
-                    <h3>🔍 Essential SEO Learning Resources</h3>
+                    <h3>
+                        <span data-lang="en">🔍 Essential SEO Learning Resources</span>
+                        <span data-lang="zh" style="display: none;">🔍 必备SEO学习资源</span>
+                    </h3>
                     <div class="seo-cards">
                         <div class="seo-card">
-                            <h4>SEO Fundamentals</h4>
-                            <p>Master the basics of search engine optimization with Ahrefs' comprehensive beginner
-                                guide.</p>
-                            <a href="https://ahrefs.com/zh/seo" class="seo-link" target="_blank">Learn SEO Basics →</a>
+                            <h4>
+                                <span data-lang="en">SEO Fundamentals</span>
+                                <span data-lang="zh" style="display: none;">SEO基础</span>
+                            </h4>
+                            <p>
+                                <span data-lang="en">Master the basics of search engine optimization with Ahrefs'
+                                    comprehensive beginner guide.</span>
+                                <span data-lang="zh" style="display: none;">通过Ahrefs全面的初学者指南掌握搜索引擎优化的基础知识。</span>
+                            </p>
+                            <a href="https://ahrefs.com/zh/seo" class="seo-link" target="_blank">
+                                <span data-lang="en">Learn SEO Basics →</span>
+                                <span data-lang="zh" style="display: none;">学习SEO基础 →</span>
+                            </a>
                         </div>
                         <div class="seo-card">
-                            <h4>How Search Engines Work</h4>
-                            <p>Understand the mechanics behind search engines to optimize your website effectively.</p>
+                            <h4>
+                                <span data-lang="en">How Search Engines Work</span>
+                                <span data-lang="zh" style="display: none;">搜索引擎如何工作</span>
+                            </h4>
+                            <p>
+                                <span data-lang="en">Understand the mechanics behind search engines to optimize your
+                                    website effectively.</span>
+                                <span data-lang="zh" style="display: none;">了解搜索引擎背后的机制，有效优化您的网站。</span>
+                            </p>
                             <a href="https://ahrefs.com/blog/zh/how-do-search-engines-work/" class="seo-link"
-                                target="_blank">Deep Dive →</a>
+                                target="_blank">
+                                <span data-lang="en">Deep Dive →</span>
+                                <span data-lang="zh" style="display: none;">深入了解 →</span>
+                            </a>
                         </div>
                     </div>
                     <div class="seo-note">
-                        <p>💡 <strong>Pro Tip:</strong> These are the absolute fundamentals you must understand before
-                            diving into advanced SEO strategies. Start here!</p>
+                        <p>
+                            <span data-lang="en">💡 <strong>Pro Tip:</strong> These are the absolute fundamentals you
+                                must understand before diving into advanced SEO strategies. Start here!</span>
+                            <span data-lang="zh" style="display: none;">💡 <strong>专业提示：</strong>
+                                这些是在深入研究高级SEO策略之前必须了解的基础知识。从这里开始！</span>
+                        </p>
                     </div>
                 </div>
             </section>
@@ -248,9 +558,103 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 AI Web Builder Guide | Making Web Development Accessible to Everyone</p>
+            <p>
+                <span data-lang="en">&copy; 2024 AI Web Builder Guide | Making Web Development Accessible to
+                    Everyone</span>
+                <span data-lang="zh" style="display: none;">&copy; 2024 AI网站建设指南 | 让网站开发对每个人都触手可及</span>
+            </p>
         </div>
     </footer>
+
+    <script>
+        // Language Switcher Functionality
+        const enButton = document.getElementById('en-btn');
+        const zhButton = document.getElementById('zh-btn');
+        const langElements = document.querySelectorAll('[data-lang]');
+
+        // Set default language
+        let currentLang = 'en';
+
+        // Update button visibility based on current language
+        function updateButtonVisibility() {
+            if (currentLang === 'en') {
+                enButton.style.display = 'none';
+                zhButton.style.display = 'block';
+            } else {
+                enButton.style.display = 'block';
+                zhButton.style.display = 'none';
+            }
+        }
+
+        // Language switcher event listeners
+        enButton.addEventListener('click', function() {
+            switchLanguage('en');
+        });
+        
+        zhButton.addEventListener('click', function() {
+            switchLanguage('zh');
+        });
+
+        // Switch language function
+        function switchLanguage(lang) {
+            console.log('Switching to language:', lang);
+            
+            // Switch language content
+            langElements.forEach(element => {
+                const elementLang = element.getAttribute('data-lang');
+                if (elementLang === lang) {
+                    element.style.display = '';
+                } else {
+                    element.style.display = 'none';
+                }
+            });
+            
+            // Update current language
+            currentLang = lang;
+            
+            // Update button visibility
+            updateButtonVisibility();
+            
+            // Save preference
+            localStorage.setItem('preferred-language', lang);
+            
+            // Force update display after language switch
+            document.body.style.opacity = '0.99';
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 10);
+        }
+
+        // Load saved language preference
+        function loadLanguagePreference() {
+            const savedLang = localStorage.getItem('preferred-language');
+            if (savedLang) {
+                switchLanguage(savedLang);
+            } else {
+                // Default to English if no preference is saved
+                switchLanguage('en');
+            }
+        }
+
+        // Handle hint close button
+        document.getElementById('hint-close').addEventListener('click', function() {
+            document.getElementById('language-hint').style.display = 'none';
+            localStorage.setItem('hint-closed', 'true');
+        });
+        
+        // Check if hint should be shown
+        function checkHintVisibility() {
+            if (localStorage.getItem('hint-closed') === 'true') {
+                document.getElementById('language-hint').style.display = 'none';
+            }
+        }
+        
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            loadLanguagePreference();
+            checkHintVisibility();
+        });
+    </script>
 </body>
 
 </html>
